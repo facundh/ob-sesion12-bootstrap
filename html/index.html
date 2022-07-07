@@ -12,7 +12,120 @@
     />
     <title>Elementos de Interés en Bootstrap</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container py-4">
+      <p class="display-3">Sección Uno</p>
+      <div>
+        <div class="bg-light p-5 rounded-4">
+          <div class="container-fluid p-5">
+            <h1 class="display-5 fw-bold fst-italic rounded-3">Jumbotron</h1>
+            <p class="col-md-8 fs-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              maxime non iure ipsa praesentium laudantium assumenda nemo
+              corporis facere ea blanditiis reiciendis dolores harum. Nihil
+              placeat eos cupiditate ad quam?
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modaltarea"
+            >
+              Modal
+            </button>
+
+            <div
+              class="modal fade"
+              id="modaltarea"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Titulo del Modal
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">Cuerpo de mi Modal</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <p class="display-3">Sección Dos</p>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            type="email"
+            class="form-control"
+            id="Nombre"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="numero" class="form-label">Numero</label>
+          <input type="number" class="form-control" id="numero" />
+        </div>
+
+        <div class="mb-3">
+            <label for="floatingTextarea" class="mb-2">Comentarios</label>
+          <textarea
+            class="form-control mb-3"
+            placeholder="Leave a comment here"
+            id="floatingTextarea"
+          ></textarea>
+        </div>
+      </form>
+
+      <hr />
+      <p class="display-3">Sección Tres</p>
+      <div class="card" style="width: 20rem">
+        <!-- Imagen -->
+        <img
+          src="../img/pexels-realtoughcandycom-11035471.jpg"
+          alt=""
+          class="card-img-top"
+        />
+        <!-- Card Header -->
+        <div class="card-header">Estudiante Frontend</div>
+        <!-- Card Body: nos añade una serie de paddings que nos ayuda -->
+        <div class="card-body">
+          <!-- Card title -->
+          <div class="card-title">Facundo Herrera</div>
+          <!-- Texto de mi tarjeta -->
+          <p class="card-text">
+            Estudiante de Open Bootcamp de la Ruta Frontend con ReactJs
+          </p>
+
+          <!-- Footer de la tarjeta -->
+          <div class="card-footer text-muted text-center">
+            facundhfed@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
